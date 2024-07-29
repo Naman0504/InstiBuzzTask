@@ -4,7 +4,7 @@ import { GiSewingMachine } from "react-icons/gi";
 function Services() {
   return (
     <>
-      <div className="w-full  mb-2 hidden md:block ">
+      <div className="md:w-full  mb-2 hidden md:block ">
         <div className="flex flex-col gap-4  justify-center pb-4 items-center w-full px-10  ">
           <h1 className="text-3xl font-bold text-brown1">What we Offer?</h1>
           <div className=" border-b-2 border-greyborder flex gap-2 w-fit justify-center items-center  ">

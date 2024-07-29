@@ -13,6 +13,7 @@ function Testimonials() {
     centerPadding: "30px",
     slidesToShow: 3,
     pauseOnHover: true,
+    arrows: false,
     speed: 500,
     responsive: [
       {
@@ -45,7 +46,7 @@ function Testimonials() {
   };
   return (
     <>
-      <section className=" hidden h-80 my-8  bg-white md:flex items-center justify-center relative">
+      <section className=" hidden md:w-full h-80 my-8  bg-white md:flex items-center justify-center relative ">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
           <p className="text-lg  text-wrap inline">

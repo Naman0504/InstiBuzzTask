@@ -2,8 +2,8 @@ import React from "react";
 
 function Collaboration() {
   return (
-    <div className="w-full h-auto ">
-      <div className="w-full p-4 md:mx-12 md:my-8">
+    <div className="md:w-full h-auto ">
+      <div className=" p-4 md:mx-12 md:my-8">
         <h1 className=" text-2xl py-2  text-blackbase font-semibold md:pb-8 border-gray-400">
           Collaborations
         </h1>

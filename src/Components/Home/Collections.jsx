@@ -35,7 +35,7 @@ function Collections() {
     };
   }, []);
   return (
-    <div className="w-full my-12  md:flex flex-col gap-6  h-fit md:p-8 md:my-6">
+    <div className="md:w-full my-12  md:flex flex-col gap-6  h-fit md:p-8 md:my-6">
       {/* <div className="m-8 border flex flex-col justify-center items-center border-black w-full"> */}
       <h1 className=" hidden md:block text-4xl border-b pb-3 border-greyborder w-full  font-bold">
         New Collections
@@ -54,7 +54,7 @@ function Collections() {
 
       <div className=" w-full mt-4 grid px-4 place-content-center py-8   grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {/* 1st card */}
-        <div className=" shadow-lg  h-80  md:min-h-[78vh]  max-w-sm w-full text-center">
+        <div className=" shadow-lg  h-56  md:min-h-[78vh]  max-w-sm w-full text-center">
           <div className="relative w-full h-full  overflow-hidden ">
             {normalProducts.map((image, index) => (
               <img
@@ -69,7 +69,7 @@ function Collections() {
           </div>
         </div>
         {/* 2nd card    */}
-        <div className=" shadow-lg h-80 md:min-h-[78vh]  max-w-sm w-full text-center">
+        <div className=" shadow-lg h-56 md:min-h-[78vh]  max-w-sm w-full text-center">
           <div className="relative w-full h-full overflow-hidden ">
             {overSizedProducts.map((image, index) => (
               <img
