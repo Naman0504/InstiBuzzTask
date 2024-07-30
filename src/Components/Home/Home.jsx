@@ -50,24 +50,25 @@ function Home() {
 
   return (
     <>
-      <Slider {...settings}>
-        {coverImgArray.map((img, index) => (
-          <div key={index}>
-            <div className="relative w-full h-64 md:h-[120vh]">
-              {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
-              <div className="relative w-full h-full overflow-hidden">
-                <div className="absolute px-4 md:px-0 w-full  rounded-lg h-full transition-transform duration-500 ease-in-out">
+      <div className="hero-section w-full md:h-[115vh] ">
+        <Slider {...settings}>
+          {coverImgArray.map((img, index) => (
+            <div key={index} className="h-full">
+              <div className="relative w-full h-64 md:h-[113vh]">
+                {/* <div className="relative w-full h-full overflow-hidden"> */}
+                <div className="absolute px-4 md:px-0 w-full  md:h-full transition-transform duration-500 ease-in-out">
                   <img
                     src={img}
-                    className="object-cover rounded-xl md:rounded-none w-full h-full"
+                    className="object-cover rounded-xl md:rounded-none w-full "
                     alt="Image 1"
                   />
                 </div>
+                {/* </div> */}
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
 
       <Collections />
       <Services />
