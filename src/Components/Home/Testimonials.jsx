@@ -46,7 +46,7 @@ function Testimonials() {
   };
   return (
     <>
-      <section className=" hidden md:w-full h-80 my-8  bg-white md:flex items-center justify-center relative ">
+      <section className=" hidden sm:hidden md:w-full h-80 my-8  bg-white md:hidden lg:flex items-center justify-center relative ">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
           <p className="text-lg  text-wrap inline">
@@ -55,7 +55,7 @@ function Testimonials() {
           </p>
         </div>
 
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center  items-center">
+        <div className="md:hidden sm:hidden lg:block absolute top-0 left-0 right-0 bottom-0 flex justify-center  items-center">
           <div className=" bg-circleblue h-16 w-16 rounded-full absolute top-12 left-16"></div>
           <div className=" bg-yellow1 h-14 w-14 rounded-full absolute  top-48 left-96"></div>
           <div className=" bg-circlebrown  h-9 w-9 rounded-full absolute  top-36 left-[17.6rem]"></div>

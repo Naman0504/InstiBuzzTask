@@ -1,10 +1,12 @@
-import Slider from "react-slick";
+// import Slider from "react-slick";
+import "./Home.css";
 import Collections from "./Collections";
 import Services from "./Services";
 import StylishBanner from "./StylishBanner";
 import Vector from "./Vector";
 import Collaboration from "./Collaboration";
 import Testimonials from "./Testimonials";
+import { useEffect, useState } from "react";
 
 function Home() {
   var settings = {
@@ -48,28 +50,41 @@ function Home() {
     "https://www.instibuzz.com/static/media/avg%20iitian%20pair%20-park-min-min.90abc770714357b75ffa.jpg",
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const carouselInterval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % coverImgArray.length);
+    }, 5000);
+
+    return () => clearInterval(carouselInterval);
+  }, [coverImgArray.length]);
+
   return (
     <>
-      <div className="hero-section w-full md:h-[115vh] ">
-        <Slider {...settings}>
-          {coverImgArray.map((img, index) => (
-            <div key={index} className="h-full">
-              <div className="relative w-full h-64 md:h-[113vh]">
-                {/* <div className="relative w-full h-full overflow-hidden"> */}
-                <div className="absolute px-4 md:px-0 w-full  md:h-full transition-transform duration-500 ease-in-out">
-                  <img
-                    src={img}
-                    className="object-cover rounded-xl md:rounded-none w-full "
-                    alt="Image 1"
-                  />
-                </div>
-                {/* </div> */}
-              </div>
-            </div>
-          ))}
-        </Slider>
+      <div className="home-top">
+        <div className="home-top-carousal ">
+          <div className="home-carousel-container   ">
+            {coverImgArray.map((img, index) => {
+              let position = index - activeIndex - 1;
+              if (position < -1) position = position + coverImgArray.length;
+              return (
+                <img
+                  key={index}
+                  src={img}
+                  alt="Models styling InstiBuzz Tees"
+                  style={{
+                    zIndex: coverImgArray.length - position,
+                    transform: `translateX(${100 * position}%)`,
+                    transition: `transform 1.5s`,
+                  }}
+                  className="home-carousel-image "
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
-
       <Collections />
       <Services />
       <StylishBanner />

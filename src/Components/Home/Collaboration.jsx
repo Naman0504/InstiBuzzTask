@@ -4,7 +4,7 @@ function Collaboration() {
   return (
     <div className="md:w-full h-auto ">
       <div className=" p-4 md:mx-12 md:my-8">
-        <h1 className=" text-2xl py-2  text-blackbase font-semibold md:pb-8 border-gray-400">
+        <h1 className=" text-2xl pb-2 pt-4 border-t-2  border-greyborder md:border-none  text-blackbase font-semibold md:pb-8 ">
           Collaborations
         </h1>
         <h1 className="text-2xl pb-4 font-smiebold block md:hidden">

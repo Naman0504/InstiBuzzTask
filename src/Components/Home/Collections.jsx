@@ -35,26 +35,26 @@ function Collections() {
     };
   }, []);
   return (
-    <div className="md:w-full my-12  md:flex flex-col gap-6  h-fit md:p-8 md:my-6">
+    <div className="md:w-full my-4  md:flex flex-col gap-6  h-fit md:p-8 md:my-0">
       {/* <div className="m-8 border flex flex-col justify-center items-center border-black w-full"> */}
       <h1 className=" hidden md:block text-4xl border-b pb-3 border-greyborder w-full  font-bold">
         New Collections
       </h1>
-      <div className="px-2 mt-2 flex justify-center items-center w-full md:hidden">
+      <div className="px-2 flex justify-center items-center w-full md:hidden">
         <h1 className="text-2xl drop-shadow-2xl  w-full px-2 font-bold">
           BestSellers
         </h1>
         <a
           href="http://"
-          className="w-full text-right drop-shadow-md text-md font-semibold px-2  "
+          className="w-full text-right drop-shadow-md text-md font-semibold px-4  "
         >
           View all
         </a>
       </div>
 
-      <div className=" w-full mt-4 grid px-4 place-content-center py-8   grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className=" w-full grid gap-4 place-items-center md:gap-0  px-4 m-auto  py-4 md:px-4 md:py-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-3">
         {/* 1st card */}
-        <div className=" shadow-lg  h-56  md:min-h-[78vh]  max-w-sm w-full text-center">
+        <div className=" shadow-lg  h-56  md:h-[26rem]  max-w-xs w-full ">
           <div className="relative w-full h-full  overflow-hidden ">
             {normalProducts.map((image, index) => (
               <img
@@ -69,7 +69,7 @@ function Collections() {
           </div>
         </div>
         {/* 2nd card    */}
-        <div className=" shadow-lg h-56 md:min-h-[78vh]  max-w-sm w-full text-center">
+        <div className=" shadow-lg h-56 md:h-[26rem]  max-w-xs w-full ">
           <div className="relative w-full h-full overflow-hidden ">
             {overSizedProducts.map((image, index) => (
               <img
@@ -84,7 +84,7 @@ function Collections() {
           </div>
         </div>
         {/* 3rd card */}
-        <div className="  hidden shadow-lg h-96 min-h-[78vh]  max-w-sm w-full text-center md:block">
+        <div className="  hidden shadow-lg h-96 md:h-[26rem]  max-w-xs w-full  md:block">
           <div className="relative w-full h-full overflow-hidden ">
             {normalProducts.map((image, index) => (
               <img
@@ -99,6 +99,7 @@ function Collections() {
           </div>
         </div>
       </div>
+      <p className="border-b border-greyborder px-8 hidden md:block"></p>
       {/* </div> */}
 
       <div className="w-full px-4 md:hidden">
