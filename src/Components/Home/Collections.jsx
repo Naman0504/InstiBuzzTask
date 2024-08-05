@@ -52,9 +52,9 @@ function Collections() {
         </a>
       </div>
 
-      <div className=" w-full grid gap-4 place-items-center md:gap-0  px-4 m-auto  py-4 md:px-4 md:py-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-3">
+      <div className=" w-full grid gap-4 md:gap-8 place-items-center lg:w-[90%] md:w-full lg:gap-0  px-4 m-auto py-4 md:px-4 md:py-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
         {/* 1st card */}
-        <div className=" shadow-lg  h-56  md:h-[26rem]  max-w-xs w-full ">
+        <div className=" shadow-lg  h-48 md:h-64  lg:h-[26rem]  max-w-xs w-full ">
           <div className="relative w-full h-full  overflow-hidden ">
             {normalProducts.map((image, index) => (
               <img
@@ -69,7 +69,7 @@ function Collections() {
           </div>
         </div>
         {/* 2nd card    */}
-        <div className=" shadow-lg h-56 md:h-[26rem]  max-w-xs w-full ">
+        <div className=" shadow-lg h-48 md:h-64 lg:h-[26rem]  max-w-xs w-full ">
           <div className="relative w-full h-full overflow-hidden ">
             {overSizedProducts.map((image, index) => (
               <img
@@ -84,7 +84,7 @@ function Collections() {
           </div>
         </div>
         {/* 3rd card */}
-        <div className="  hidden shadow-lg h-96 md:h-[26rem]  max-w-xs w-full  md:block">
+        <div className="  hidden shadow-lg h-48 md:h-64 lg:h-[26rem]  max-w-xs w-full  md:block">
           <div className="relative w-full h-full overflow-hidden ">
             {normalProducts.map((image, index) => (
               <img
@@ -99,6 +99,7 @@ function Collections() {
           </div>
         </div>
       </div>
+
       <p className="border-b border-greyborder px-8 hidden md:block"></p>
       {/* </div> */}
 

@@ -9,45 +9,11 @@ import Testimonials from "./Testimonials";
 import { useEffect, useState } from "react";
 
 function Home() {
-  var settings = {
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   const coverImgArray = [
+    "https://www.instibuzz.com/static/media/avg%20iitian%20pair%20-park-min-min.90abc770714357b75ffa.jpg",
     "https://www.instibuzz.com/static/media/red%20wall%20intense-min-min.1e95db4aa5dc6c598f84.jpg",
     "https://www.instibuzz.com/static/media/trio%202-min-min.8fb833268060d006a783.jpg",
     "https://www.instibuzz.com/static/media/take%20lite%20back-min-min.c8ebb2457c11ae24e685.jpg",
-    "https://www.instibuzz.com/static/media/avg%20iitian%20pair%20-park-min-min.90abc770714357b75ffa.jpg",
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -63,7 +29,7 @@ function Home() {
   return (
     <>
       <div className="home-top">
-        <div className="home-top-carousal ">
+        <div className="home-top-carousal  ">
           <div className="home-carousel-container   ">
             {coverImgArray.map((img, index) => {
               let position = index - activeIndex - 1;

@@ -5,6 +5,44 @@ import Slider from "react-slick";
 import "./Testimonial.css";
 
 function Testimonials() {
+  const testimonialCards = [
+    {
+      id: 1,
+      name: "Yash",
+      img: "https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__",
+      comment:
+        "Transforming me from a normal t-shirt guy to a fashion lover, this brand has changed the game for me. Thanks to the relatable themes, it makes me feel connected to my college",
+    },
+
+    {
+      id: 2,
+      name: "Dev",
+      img: "https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__",
+      comment:
+        "Instibuzz has really impressed me. As the Sports Sec, I needed hundreds of jerseys that looked good, were made well, and fit my budget. I was unsure about finding the right vendor, but Instibuzz came through. They provided everything I needed, customized to my specifications, and made sure it all arrived on time for the Schroeter's trophy event.",
+    },
+    {
+      id: 3,
+      name: "AMSA",
+      img: "https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__",
+      comment:
+        "Thank you InstiBuzz for the fantastic jerseys for our APL Cricket League. The quality exceeded our expectations, and the service was fantastic. Participants were very happy with the comfort and design of the jerseys. Looking forward to future collaborations!!",
+    },
+    {
+      id: 4,
+      name: "Becky Nelson",
+      img: "https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    // {
+    //   id: 5,
+    //   name: "Becky Nelson",
+    //   img: "https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__",
+    //   comment:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    // },
+  ];
   const settings = {
     className: "center",
     centerMode: true,
@@ -12,6 +50,7 @@ function Testimonials() {
     infinite: true,
     centerPadding: "30px",
     slidesToShow: 3,
+    slidesToScroll: 1,
     pauseOnHover: true,
     arrows: false,
     speed: 500,
@@ -20,18 +59,31 @@ function Testimonials() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
           infinite: true,
-          dots: true,
+          centerPadding: "10px",
+          dots: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 820,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1,
-          // centerPadding: "40px",
+          initialSlide: 3,
+          centerMode: true,
+          centerPadding: "60px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 3,
+          centerMode: true,
+          centerPadding: "60px",
         },
       },
       {
@@ -73,265 +125,80 @@ function Testimonials() {
         </div>
       </section>
 
-      <h1 className="mx-6 justify-start text-xl font-bold pt-12 pb-4 px-1 border-t-2 border-greyborder md:hidden ">
+      <h1 className="mx-6 md:mx-10 justify-start text-xl md:text-2xl font-bold pt-12 pb-4 px-1 border-t-2 border-greyborder lg:hidden ">
         What our Clients Says
       </h1>
-      {/* <div className="slider-container"> */}
+
       <Slider
         {...settings}
-        className="custom-slider-Test my-8  w-full md:-mt-7"
+        className="custom-slider-Test my-8   w-full lg:-mt-7"
       >
-        <div className="px-6 md:px-6 w-full h-96">
-          <div className="relative flex flex-col justify-center items-center w-full  md:w-[23rem] md:h-[22rem] bg-pink1 rounded-lg shadow-md">
-            <div className="p-6   flex flex-col justify-center items-center ">
-              <div className=" w-20 h-20 mt-6 p-2 rounded-full bg-yellow2 flex items-center justify-center">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__"
-                  alt="Image"
-                  class="w-full h-full z-50 rounded-full object-cover"
-                />
-              </div>
-              <h2 className="text-2xl text-center font-bold mb-2 mt-2">
-                Becky Nelson
-              </h2>
-              <div className="flex flex-col items-center mb-4 gap-5">
-                <div className="flex space-x-1 border">
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
+        {testimonialCards.map((card) => (
+          <div
+            key={card.id}
+            className="px-6 md:px-6   md:h-80 md:w-full h-96 lg:h-96"
+          >
+            <div className="relative flex flex-col justify-center items-center w-full h-full  lg:w-[23rem]  lg:h-[24rem]  bg-pink1 rounded-lg shadow-md">
+              <div className="p-6   flex flex-col justify-center items-center  lg:h-full ">
+                <div className=" w-20 h-20 mt-6 p-2 rounded-full bg-yellow2 flex items-center justify-center">
+                  <img
+                    src={card.img}
+                    alt="Image"
+                    class="w-full h-full z-50 rounded-full object-cover"
+                  />
                 </div>
-                <p className="text-black mb-2 text-center text-xs md:text-sm font-semibold mt-5 px-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <h2 className="text-2xl text-center font-bold mb-2 mt-2">
+                  {card.name}
+                </h2>
+                <div className="relative flex h-full flex-col items-center mb-4 gap-5">
+                  <div className="flex space-x-1 ">
+                    <svg
+                      className="w-4 h-4 text-blue-950"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
+                    </svg>
+                    <svg
+                      className="w-4 h-4 text-blue-950"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
+                    </svg>
+                    <svg
+                      className="w-4 h-4 text-blue-950"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
+                    </svg>
+                    <svg
+                      className="w-4 h-4 text-blue-950"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
+                    </svg>
+                    <svg
+                      className="w-4 h-4 text-blue-950"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
+                    </svg>
+                  </div>
+                  <p className=" text-black   mb-2 text-center text-xs h-auto lg:h-auto  lg:text-xs  font-semibold mt-5 px-1">
+                    {card.comment.substring(0, 300) + "..."}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* ---2-- */}
-        <div className="px-6 md:px-6 w-full h-96">
-          <div className="relative  flex flex-col justify-center items-center w-full  md:w-[23rem] md:h-[22rem] bg-pink1 rounded-lg shadow-md">
-            <div className="p-6 flex flex-col justify-center items-center">
-              <div className=" w-20 h-20 mt-6 p-2 rounded-full bg-yellow2 flex items-center justify-center">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__"
-                  alt="Image"
-                  className="w-full h-full z-50 rounded-full object-cover"
-                />
-              </div>
-              <h2 className="text-2xl text-center font-bold mb-2 mt-2">
-                Becky Nelson
-              </h2>
-              <div className="flex flex-col items-center mb-4 gap-5">
-                <div className="flex space-x-1 border">
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                </div>
-                <p className="text-black mb-2 text-center text-xs md:text-sm font-semibold mt-5 px-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* ----3--- */}
-        <div className="px-6 md:px-6 w-full h-96">
-          <div className="relative  flex flex-col justify-center items-center w-full  md:w-[23rem] md:h-[22rem] bg-pink1 rounded-lg shadow-md">
-            <div className="p-6 flex flex-col justify-center items-center">
-              <div className=" w-20 h-20 mt-6 p-2 rounded-full bg-yellow2 flex items-center justify-center">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__"
-                  alt="Image"
-                  className="w-full h-full z-50 rounded-full object-cover"
-                />
-              </div>
-              <h2 className="text-2xl text-center font-bold mb-2 mt-2">
-                Becky Nelson
-              </h2>
-              <div className="flex flex-col items-center mb-4 gap-5">
-                <div className="flex space-x-1 border">
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                </div>
-                <p className="text-black  mb-2 text-center text-xs md:text-sm font-semibold mt-5 px-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* ----4--- */}
-        <div className="px-6 md:px-6 w-full h-96">
-          <div className="relative  flex flex-col justify-center items-center w-full  md:w-[23rem] md:h-[22rem] bg-pink1 rounded-lg shadow-md">
-            <div className="p-6 flex flex-col justify-center items-center">
-              <div className=" w-20 h-20 mt-6 p-2 rounded-full bg-yellow2 flex items-center justify-center">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/5350/aede/f3110485be869387363665aa7b3c33bc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJ-w919DJnTOOsI58PpQqVDXJAXkRmsQPGQa0dW3uCkBW0miBefry~Y2rBauQX27lEyUl8cVMWVXPeG4k7gJ73PchF8xlq1oqdtS2McMr~fON02UVv3qtonrWsa1Z8i5ZEvHeYd5QmuxpfqGvJEGCjES8of2XmELXuAWVJrMHRvVbhyWvBhiB8bXfS78oA6aM4q6Vq5hLhrr2puxZ8o1h5r0tgScR9FCe8mmbd7-HhzSa4K~McmXFqWPBk5QE6oy9tadZio1SIcigH1qB058znyLn12g48vFkPsE1xzAkFF7amuXDSnyynt0yhSsFB-J6sLP388Xum5V8qRkxSv1eA__"
-                  alt="Image"
-                  className="w-full h-full z-50 rounded-full object-cover"
-                />
-              </div>
-              <h2 className="text-2xl text-center font-bold mb-2 mt-2">
-                Becky Nelson
-              </h2>
-              <div className="flex flex-col items-center mb-4 gap-5">
-                <div className="flex space-x-1 border">
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-blue-950"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 .587l3.668 10.425h10.954l-8.867 6.447 3.667 10.424-8.867-6.447-8.866 6.447 3.666-10.424-8.866-6.447h10.953z" />
-                  </svg>
-                </div>
-                <p className="text-black mb-2 text-center text-xs md:text-sm font-semibold mt-5 px-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </Slider>
-      {/* </div> */}
+
+      <p></p>
     </>
   );
 }

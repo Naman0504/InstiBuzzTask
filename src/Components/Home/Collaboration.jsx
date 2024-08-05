@@ -3,27 +3,24 @@ import React from "react";
 function Collaboration() {
   return (
     <div className="md:w-full h-auto ">
-      <div className=" p-4 md:mx-12 md:my-8">
-        <h1 className=" text-2xl pb-2 pt-4 border-t-2  border-greyborder md:border-none  text-blackbase font-semibold md:pb-8 ">
+      <div className=" p-4  lg:mx-12 lg:my-4">
+        <h1 className="text-xl md:text-2xl pb-2 pt-4 border-t-2 md:px-6  border-greyborder md:border-none  text-blackbase font-semibold md:pb-8 ">
           Collaborations
         </h1>
-        <h1 className="text-2xl pb-4 font-smiebold block md:hidden">
+        <h1 className="text-2xl md: pb-4 font-smiebold block md:hidden">
           Let’s Work Together!
         </h1>
         <div className="flex justify-center items-center">
           <div className="w-full md:w-3/5">
-            <div className="bg-yellow1 rounded-lg w-full flex flex-col justify-center items-center gap-10 p-10 md:rounded-t-full md:bg-pink1 md:rounded-l-full">
+            <div className="bg-yellow1 rounded-lg w-full flex flex-col justify-center items-center gap-8 lg:gap-10 p-10  md:bg-pink1 md:rounded-t-full md:rounded-l-full">
               {/* <div className="w-full flex justify-center border border-black items-ceter flex-col gap-5"> */}
-              <h1 className="text-4xl font-bold hidden md:block">
+              <h1 className="lg:text-4xl md:text-xl font-bold hidden md:block">
                 Let’s Work Together!
               </h1>
               <p className="md:text-sm text-xs font-medium w-full text-center  text-blackbase">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                {/* <br /> */}
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                {/* <br /> */}
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                {/* <br /> */}
                 nisi ut aliquip ex ea commodo consequat.
               </p>
               <p className="text-xs font-medium w-full text-center  text-blackbase md:hidden">
@@ -32,13 +29,13 @@ function Collaboration() {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <button className=" outline-none drop-shadow-lg px-5 py-2 bg-brown1 text-white  md:bg-yellow1 md:text-blackbase rounded-sm">
+              <button className=" place-self-center  outline-none drop-shadow-lg px-5 py-2 bg-brown1 text-white  md:bg-yellow1 md:text-blackbase rounded-sm">
                 View Details
               </button>
               {/* </div> */}
             </div>
           </div>
-          <div className="hidden  md:block md:w-2/5">
+          <div className="hidden   md:block lg:w-2/5  md:w-2/5">
             <svg
               width="90%"
               height="320"

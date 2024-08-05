@@ -38,25 +38,6 @@
 @media screen and (max-width: 1100px) {
 }
 
-/* @media screen and (max-width: 800px) {
-  .home-top .home-header {
-    width: 85%;
-    font-size: calc(11vw);
-    font-family: Tenor Sans;
-    color: #40210b;
-    padding-top: 50px;
-  }
-
-  .home-card-two-right {
-    display: none;
-    width: 0;
-  }
-
-  .home-card-two-left {
-    width: 100%;
-  }
-} */
-
 @media screen and (max-width: 560px) {
   .home-carousel-image {
     /* height: 100%; */
@@ -67,26 +48,16 @@
   }
 }
 @media screen and (max-width: 395px) {
-  .home-carousel-container {
-    /* height: 58vw; */
-    width: 100vw;
-
-    /* aspect-ratio: 1920/1080; */
-    /* background-color: orange; */
-    /* overflow: hidden; */
-    /* padding: 0 3rem; */
-  }
-
   .home-carousel-image {
     /* height: 100%; */
-    width: 100%;
+    /* width: 100%; */
     /* aspect-ratio: 1920/1080; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* padding: 0 1rem; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    padding-left: 1rem;
+    padding-right: 1rem;
     /* border-radius: 12px; */
-    object-fit: cover;
   }
 }
 
