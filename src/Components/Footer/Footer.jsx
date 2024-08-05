@@ -11,7 +11,7 @@ function Footer() {
     <>
       <div className=" w-full h-80 flex justify-center p-3  bg-yellow1 ">
         <div className="h-full flex   items-center justify-evenly w-full  md:flex-row">
-          <div className=" w-40 md:w-2/4 border border-black  p-4 flex justify-center items-center lg:w-auto">
+          <div className=" w-40 md:w-2/4   p-4 flex justify-center items-center lg:w-auto">
             <img
               className="md:w-60 lg:w-56 object-cover"
               src="https://s3-alpha-sig.figma.com/img/d3ec/1426/12d21ccf04333a13ed3cc961cda78f41?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ftra3XdiK4xMZwG-cBY4T8ejwUd-UIGa-xBrQc267ayg67jt0SnCEcP5FCvGpg-Gsh5HH6I7YOJN15e42HBk~In2mldHXiRm5naqmlpWk0DdoPRai-QZCSKX7LLzUgOT5jsWUkNkCP4YMu7SvgKiTwv1y4k4QiKRGysj0rhyvFjega~KwXxvBH0eAX7ZZdF-OXjDCVbeuWMghU6XZkq7PmkhmgGw97COav0B7J1OY1gWagQhPyGTNzcz9TDhsdpsKKiJsxsoV01HG-UQBZdn47eOxcsbFIKvaLI5gDs9SEyo0K71Ho4SckAD~SJb7~ah2L8cQ7XzyYd~TKN4K-Y1tA__"
@@ -56,7 +56,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className=" lg:w-fit md:w-2/4  border border-black p-4 flex flex-col justify-center">
+          <div className=" lg:w-fit md:w-2/4   p-4 flex flex-col justify-center">
             <h1 className="text-lg text-left pt-6  font-semibold">
               Contact Us
             </h1>
