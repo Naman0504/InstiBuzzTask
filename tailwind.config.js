@@ -19,6 +19,10 @@ export default {
         circleblue: "#000080",
         circlegreen: "#64FCD9",
       },
+      fontFamily: {
+        Tenor: ["Tenor Sans", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+      },
     },
   },
   plugins: [],

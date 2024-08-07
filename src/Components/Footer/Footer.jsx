@@ -19,56 +19,58 @@ function Footer() {
           </div>
 
           <div className="w-40 p-4 hidden  justify-center items-center md:hidden  lg:flex lg:flex-col">
-            <h1 className="text-lg text-left mb-3 font-semibold">
+            <h1 className="text-lg text-left mb-3 font-semibold font-Tenor">
               Useful Links
             </h1>
             <ul>
-              <li className=" text-sm text-left  font-medium leading-7 ">
+              <li className=" text-sm text-left  font-medium leading-7 cursor-pointer font-lato ">
                 FAQs
               </li>
-              <li className=" text-sm text-left font-medium leading-7">
+              <li className=" text-sm text-left font-medium leading-7 cursor-pointer font-lato">
                 About Us
               </li>
-              <li className=" text-sm text-left font-medium leading-7">
+              <li className=" text-sm text-left font-medium leading-7 cursor-pointer font-lato">
                 Contact Us
               </li>
-              <li className=" text-sm text-left font-medium leading-7">
+              <li className=" text-sm text-left font-medium leading-7 cursor-pointer font-lato">
                 Collab with Us
               </li>
             </ul>
           </div>
 
           <div className="w-40 p-4 hidden  justify-center md:hidden lg:flex lg:flex-col">
-            <h1 className="text-lg mb-3 text-left font-semibold">Policies</h1>
+            <h1 className="text-lg mb-3 text-left font-semibold font-Tenor">
+              Policies
+            </h1>
             <ul>
-              <li className=" text-sm  font-medium leading-7 ">
+              <li className=" text-sm  font-medium leading-7 cursor-pointer font-lato ">
                 Terms & Condition
               </li>
-              <li className=" text-sm font-medium leading-7 ">
+              <li className=" text-sm font-medium leading-7 cursor-pointer font-lato ">
                 Exchange Policy
               </li>
-              <li className=" text-sm font-medium leading-7 ">
+              <li className=" text-sm font-medium leading-7 cursor-pointer font-lato ">
                 Shipping Policy
               </li>
-              <li className=" text-sm font-medium leading-7 ">
+              <li className=" text-sm font-medium leading-7 cursor-pointer font-lato ">
                 Privacy Policy
               </li>
             </ul>
           </div>
 
           <div className=" lg:w-fit md:w-2/4   p-4 flex flex-col justify-center">
-            <h1 className="text-lg text-left pt-6  font-semibold">
+            <h1 className="text-lg text-left pt-6  font-semibold font-Tenor">
               Contact Us
             </h1>
             <div className="w-full mt-3  flex flex-col">
               <a
                 href=""
-                className=" text-nowrap flex gap-2 py-2 border-b border-gray-900 "
+                className=" text-nowrap flex gap-2 py-2 border-b border-gray-900 font-lato "
               >
                 <FaLocationDot size={20} />
                 IIT Madras, Chennai-600036
               </a>
-              <a href="" className=" text-nowrap py-2 flex gap-2 ">
+              <a href="" className=" text-nowrap py-2 flex gap-2 font-lato ">
                 <IoMdCall size={20} />
                 +91 99444 87273
               </a>
@@ -77,22 +79,34 @@ function Footer() {
               <ul className="flex gap-2 ">
                 <li className="w-12 h-12 flex justify-center items-center rounded-full border border-gray-300 ">
                   <a href="">
-                    <IoLogoWhatsapp size={26} />
+                    <IoLogoWhatsapp
+                      size={26}
+                      className=" hover:scale-110 hover:duration-500 "
+                    />
                   </a>
                 </li>
                 <li className="w-12 h-12 flex justify-center items-center rounded-full border border-gray-300">
                   <a href="">
-                    <FaLinkedin size={26} />
+                    <FaLinkedin
+                      size={26}
+                      className=" hover:scale-110 scale- hover:duration-500"
+                    />
                   </a>
                 </li>
                 <li className="w-12 h-12 flex justify-center items-center rounded-full border border-gray-300">
                   <a href="">
-                    <FaSquareInstagram size={26} />
+                    <FaSquareInstagram
+                      size={26}
+                      className=" hover:scale-110 scale- hover:duration-500"
+                    />
                   </a>
                 </li>
                 <li className="w-12 h-12 flex justify-center items-center rounded-full border border-gray-300">
                   <a href="">
-                    <IoMdMail size={26} />
+                    <IoMdMail
+                      size={26}
+                      className=" hover:scale-110 scale- hover:duration-500"
+                    />
                   </a>
                 </li>
               </ul>

@@ -37,16 +37,16 @@ function Collections() {
   return (
     <div className="md:w-full my-4  md:flex flex-col gap-6  h-fit md:p-8 md:my-0">
       {/* <div className="m-8 border flex flex-col justify-center items-center border-black w-full"> */}
-      <h1 className=" hidden md:block text-4xl border-b pb-3 border-greyborder w-full  font-bold">
+      <h1 className=" hidden  md:block text-4xl border-b pb-3 font-Tenor border-greyborder w-full  font-bold">
         New Collections
       </h1>
       <div className="px-2 flex justify-center items-center w-full md:hidden">
-        <h1 className="text-2xl drop-shadow-2xl  w-full px-2 font-bold">
+        <h1 className="text-2xl font-Tenor drop-shadow-2xl  w-full px-2 font-bold">
           BestSellers
         </h1>
         <a
           href="http://"
-          className="w-full text-right drop-shadow-md text-md font-semibold px-4  "
+          className="w-full font-lato text-right drop-shadow-md text-md font-semibold px-4  "
         >
           View all
         </a>
@@ -105,8 +105,8 @@ function Collections() {
 
       <div className="w-full px-4 md:hidden">
         <div className="w-full border  border-black p-4 rounded-xl flex justify-center items-center gap-4 ">
-          <p className="text-md font-semibold">BuZz Sale Ends In:</p>
-          <p className="text-md font-semibold">04d:16hrs:32mins</p>
+          <p className="text-md font-lato font-semibold">BuZz Sale Ends In:</p>
+          <p className="text-md font-lato font-semibold">04d:16hrs:32mins</p>
         </div>
       </div>
     </div>

@@ -17,14 +17,14 @@ function Header() {
           </div>
           <div className="hidden sm:flex md:flex py-auto justify-center w-full ">
             <ul className="flex justify-center items-center px-3  gap-10 text-base font-semibold ">
-              <li>Home</li>
-              <li>Shop</li>
-              <li>Our Services</li>
-              <li>About Us</li>
+              <li className=" cursor-pointer font-Tenor ">Home</li>
+              <li className=" cursor-pointer font-Tenor ">Shop</li>
+              <li className=" cursor-pointer font-Tenor ">Our Services</li>
+              <li className=" cursor-pointer font-Tenor ">About Us</li>
             </ul>
           </div>
           <div className="hidden sm:flex  md:flex justify-center items-center py-auto">
-            <button className=" px-6 h-fit py-3  border border-brown1   bg-transparent rounded-lg font-medium hover:bg-brown1 hover:text-white hover:duration-500 ">
+            <button className=" px-6 h-fit py-3 font-Tenor  border border-brown1   bg-transparent rounded-lg font-semibold hover:bg-brown1 hover:text-white hover:duration-500 ">
               Login/Signup
             </button>
           </div>
@@ -33,7 +33,7 @@ function Header() {
         <div className="bg-yellow1 rounded-lg flex justify-between p-4 sm:hidden md:hidden">
           <div className="flex justify-center items-center gap-2">
             <ul className="flex justify-center items-center gap-1">
-              <li>
+              <li className="cursor-pointer">
                 <RxHamburgerMenu size={22} />
               </li>
               <li>
@@ -49,13 +49,13 @@ function Header() {
 
           <div className="flex justify-center items-center gap-2">
             <ul className="flex justify-center items-center ">
-              <li>
+              <li className="cursor-pointer">
                 <CiSearch size={24} />
               </li>
-              <li>
+              <li className="cursor-pointer">
                 <CiHeart size={24} />
               </li>
-              <li>
+              <li className="cursor-pointer">
                 <CiShoppingCart size={24} />
               </li>
             </ul>
